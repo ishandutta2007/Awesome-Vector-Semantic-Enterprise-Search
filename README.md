@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Vector-Semantic-Enterprise-Search/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Vector-Semantic-Enterprise-Search?style=social&color=white" alt="Stars Badge"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Vector-Semantic-Enterprise-Search/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Vector-Semantic-Enterprise-Search?style=social&color=white" alt="Stars_Badge"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Vector-Semantic-Enterprise-Search/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Vector-Semantic-Enterprise-Search?style=social&color=white" alt="Forks Badge"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Vector-Semantic-Enterprise-Search/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome"/></a>
@@ -63,11 +63,11 @@ The table below catalogs premier managed cloud search services and vector databa
 
 ## 💻 Open-Source GitHub Projects
 
-Explore the open-source search ecosystem. All repositories are equipped with real-time GitHub social badges linking directly to their stargazers page, sorted by **Star Count (Descending)**. 🌟
+Explore the open-source search ecosystem. All repositories are equipped with real-time GitHub social badges linking directly to their stargazers page, sorted by **Stars_Count (Descending)**. 🌟
 
 ### 🏆 Open-Source Ecosystem Matrix
 
-| Repository 📦 | GitHub Stars ⭐ | Primary License ⚖️ | Architecture & Focus 🔍 |
+| Repository 📦 | GitHub_Stars ⭐ | Primary License ⚖️ | Architecture & Focus 🔍 |
 | :--- | :--- | :--- | :--- |
 | **[Elasticsearch](https://github.com/elastic/elasticsearch)** | [![Stars](https://img.shields.io/github/stars/elastic/elasticsearch?style=social&color=white)](https://github.com/elastic/elasticsearch/stargazers) | Elastic 2.0 / SSPL / AGPL-3.0 | Industry-standard distributed search engine with native HNSW vector indexes and RRF hybrid fusion. |
 | **[Meilisearch](https://github.com/meilisearch/meilisearch)** | [![Stars](https://img.shields.io/github/stars/meilisearch/meilisearch?style=social&color=white)](https://github.com/meilisearch/meilisearch/stargazers) | MIT | Blazing-fast Rust search engine with instant typo tolerance, faceted filtering, and semantic AI vector search. |
