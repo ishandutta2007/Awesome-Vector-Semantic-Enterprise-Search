@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" style="background:#0b0f19; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a13" />
+      <stop offset="50%" stop-color="#0d1527" />
+      <stop offset="100%" stop-color="#070d18" />
+    </linearGradient>
+
+    <!-- Ambient Glow Gradient -->
+    <radialGradient id="glow-cyan" cx="20%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#00f2fe" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glow-purple" cx="80%" cy="70%" r="60%">
+      <stop offset="0%" stop-color="#8a2be2" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#8a2be2" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Title Gradient -->
+    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38ef7d" />
+      <stop offset="50%" stop-color="#11998e" />
+      <stop offset="100%" stop-color="#00d2ff" />
+    </linearGradient>
+
+    <linearGradient id="vector-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1" />
+    </pattern>
+
+    <style>
+      .node-pulse {
+        animation: pulse 4s ease-in-out infinite alternate;
+      }
+      .node-pulse-2 {
+        animation: pulse 3.5s ease-in-out infinite alternate;
+      }
+      .orbit-line {
+        stroke-dasharray: 8 6;
+        animation: dash 30s linear infinite;
+      }
+      .wave-line {
+        animation: floatWave 6s ease-in-out infinite alternate;
+      }
+      .badge-glow {
+        filter: drop-shadow(0 0 8px rgba(0, 242, 254, 0.4));
+      }
+      @keyframes dash {
+        to {
+          stroke-dashoffset: 1000;
+        }
+      }
+      @keyframes pulse {
+        0% { transform: scale(1); opacity: 0.5; }
+        50% { transform: scale(1.15); opacity: 0.9; }
+        100% { transform: scale(1); opacity: 0.5; }
+      }
+      @keyframes floatWave {
+        0% { transform: translateY(0px) rotate(0deg); }
+        100% { transform: translateY(-10px) rotate(1deg); }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="100%" height="100%" fill="url(#bg-grad)" />
+  <rect width="100%" height="100%" fill="url(#grid)" />
+  <rect width="100%" height="100%" fill="url(#glow-cyan)" />
+  <rect width="100%" height="100%" fill="url(#glow-purple)" />
+
+  <!-- Dynamic / Animated Vector Search Geometric Nodes (kept in subtle background) -->
+  <g opacity="0.65" transform="translate(0, 0)">
+    <!-- Connecting Vector Lines -->
+    <path class="orbit-line" d="M 120 180 L 280 80 L 420 130 L 600 60 L 780 120 L 950 70 L 1080 190" fill="none" stroke="rgba(0, 242, 254, 0.25)" stroke-width="1.5" />
+    <path class="orbit-line" d="M 100 260 L 260 290 L 520 270 L 720 300 L 920 260 L 1100 240" fill="none" stroke="rgba(138, 43, 226, 0.25)" stroke-width="1.5" />
+    <path class="orbit-line" d="M 280 80 L 260 290 M 420 130 L 520 270 M 780 120 L 720 300 M 950 70 L 920 260" fill="none" stroke="rgba(79, 172, 254, 0.18)" stroke-width="1.2" />
+
+    <!-- Pulsing Neural Vector Nodes -->
+    <circle cx="280" cy="80" r="5" fill="#00f2fe" class="node-pulse" />
+    <circle cx="420" cy="130" r="4" fill="#38ef7d" class="node-pulse-2" />
+    <circle cx="600" cy="60" r="6" fill="#00f2fe" class="node-pulse" />
+    <circle cx="780" cy="120" r="5" fill="#8a2be2" class="node-pulse-2" />
+    <circle cx="950" cy="70" r="4.5" fill="#00d2ff" class="node-pulse" />
+    <circle cx="260" cy="290" r="5" fill="#8a2be2" class="node-pulse-2" />
+    <circle cx="520" cy="270" r="4" fill="#00f2fe" class="node-pulse" />
+    <circle cx="720" cy="300" r="5.5" fill="#38ef7d" class="node-pulse-2" />
+    <circle cx="920" cy="260" r="4.5" fill="#8a2be2" class="node-pulse" />
+    <circle cx="1080" cy="190" r="6" fill="#00f2fe" class="node-pulse-2" />
+  </g>
+
+  <!-- Foreground Title and Content Frame -->
+  <g transform="translate(600, 150)" text-anchor="middle">
+    <!-- Top Decorative Category Tag -->
+    <rect x="-180" y="-105" width="360" height="30" rx="15" fill="rgba(0, 242, 254, 0.1)" stroke="rgba(0, 242, 254, 0.4)" stroke-width="1" />
+    <text x="0" y="-85" fill="#00f2fe" font-size="12.5" font-weight="700" letter-spacing="2.5" text-transform="uppercase">
+      ⚡ AI RETRIEVAL &amp; KNOWLEDGE INFRASTRUCTURE ⚡
+    </text>
+
+    <!-- Main Title -->
+    <text x="0" y="-20" fill="url(#title-grad)" font-size="40" font-weight="900" letter-spacing="1.2" filter="drop-shadow(0 4px 14px rgba(0,0,0,0.8))">
+      VECTOR &amp; SEMANTIC ENTERPRISE SEARCH
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="24" fill="#cbd5e1" font-size="16.5" font-weight="400" letter-spacing="0.5">
+      The Curated Ecosystem for Vector Databases, Hybrid Search &amp; RAG Architecture
+    </text>
+
+    <!-- Tech Feature Pills (Foreground) -->
+    <g transform="translate(0, 72)">
+      <!-- Pill 1: Hybrid Retrieval -->
+      <g transform="translate(-320, 0)">
+        <rect x="-80" y="-15" width="160" height="30" rx="8" fill="rgba(255, 255, 255, 0.06)" stroke="rgba(0, 242, 254, 0.35)" stroke-width="1" />
+        <text x="0" y="5" fill="#e2e8f0" font-size="12" font-weight="600">⚡ BM25 + Vector Fusion</text>
+      </g>
+      <!-- Pill 2: Dedicated Vector DBs -->
+      <g transform="translate(-105, 0)">
+        <rect x="-80" y="-15" width="160" height="30" rx="8" fill="rgba(255, 255, 255, 0.06)" stroke="rgba(56, 239, 125, 0.35)" stroke-width="1" />
+        <text x="0" y="5" fill="#e2e8f0" font-size="12" font-weight="600">🎯 Dedicated ANN DBs</text>
+      </g>
+      <!-- Pill 3: Enterprise Search -->
+      <g transform="translate(105, 0)">
+        <rect x="-80" y="-15" width="160" height="30" rx="8" fill="rgba(255, 255, 255, 0.06)" stroke="rgba(138, 43, 226, 0.35)" stroke-width="1" />
+        <text x="0" y="5" fill="#e2e8f0" font-size="12" font-weight="600">🔒 RBAC &amp; ACL Connectors</text>
+      </g>
+      <!-- Pill 4: Production RAG -->
+      <g transform="translate(320, 0)">
+        <rect x="-80" y="-15" width="160" height="30" rx="8" fill="rgba(255, 255, 255, 0.06)" stroke="rgba(0, 210, 255, 0.35)" stroke-width="1" />
+        <text x="0" y="5" fill="#e2e8f0" font-size="12" font-weight="600">🚀 Production-Ready RAG</text>
+      </g>
+    </g>
+  </g>
+</svg>
